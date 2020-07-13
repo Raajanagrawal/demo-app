@@ -25,7 +25,8 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <!-- animate on scroll library -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
+  <!-- anmimejs text animation -->
+  <link href="assets/vendor/animejs/animejs.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="style.css" rel="stylesheet">
 
@@ -54,8 +55,8 @@
           <li class="active"><a class = "bx bx-home-alt"  href="#hero"> Home </a></li>
           <li><a class = "bx bx-user" href="#about"> About</a></li>
           <!-- onclick="marqueeFunction(marqueestart1)"  -->
-          <li><a class = "bx bx-game" href="#services"> Skills</a></li>
-          <li><a class = "bx bx-shield" href="#portfolio"> Experience</a></li>
+          <li><a class = "bx bx-game" href="#skills"> Skills</a></li>
+          <li><a class = "bx bx-shield" href="#experience"> Experience</a></li>
           <li><a class = "bx bx-world" href="#team"> Team</a></li>
           <li><a class="bx bx-phone-call" href="#contact"> Contact </a></li>
         </ul>
@@ -89,8 +90,8 @@
           <div class="content col-xl-6 d-flex align-items-stretch" data-aos="fade-up">
             <h3> 
               <marquee loop=1 behavior="slide" scrollamount="10" data-aos="fade-left">
-              <div style="padding-left: 30%;">
-              <img style="width: 40%; border-radius: 25%; border: 5px solid lightskyblue;" src="assets/img/photo.png">
+              <div class="photomarquee">
+              <img class="photo" src="assets/img/photo2.png">
               </div>	
             </marquee>
               <!-- <a style = "left:7%;" class="bx bx-body about-btn" >About me&nbsp;
@@ -98,12 +99,21 @@
                 </a> -->
                 <!-- {{startmarquee}} usingjavascriptvariable in html -->
                 <!-- href="#aboutDetails" (click)="changeFlag()" -->
-              	<div>
+              	<!-- <div>
                   <marquee loop=1 behavior="slide" scrollamount="10" id="marqueestart1" data-aos="fade-left" data-aos-delay="200">I'm a learning Full Stack Web Developer,</marquee>
                   <br><marquee loop=1 behavior="slide" scrollamount="8" id="marqueestart" data-aos="fade-left" data-aos-delay="300">working for Infosys Limited in Bangalore.</marquee>
                   <br><marquee loop=1 behavior="slide" scrollamount="6" id="marqueestart" data-aos="fade-left" data-aos-delay="400">I have a passion for thoughtful UI design</marquee> 
                   <br><marquee loop=1 behavior="slide" scrollamount="4" id="marqueestart" data-aos="fade-left" data-aos-delay="500">and creating intuitive user experiences.</marquee>
-                </divq>
+                </div> -->
+
+
+                <div class="textmarquee">
+                  <marquee loop=1 behavior="slide" scrollamount="10" id="marqueestart1" data-aos="fade-left" data-aos-delay="200">I'm a learning Full Stack Web Developer,</marquee>
+                  <marquee loop=1 behavior="slide" scrollamount="8" id="marqueestart" data-aos="fade-left" data-aos-delay="300">working for Infosys Limited in Bangalore.</marquee>
+                  <marquee loop=1 behavior="slide" scrollamount="6" id="marqueestart" data-aos="fade-left" data-aos-delay="400">I have a passion for thoughtful UI design</marquee> 
+                  <marquee loop=1 behavior="slide" scrollamount="4" id="marqueestart" data-aos="fade-left" data-aos-delay="500">and creating intuitive user experiences.</marquee>
+                </div>
+
               	</h3>
             
           </div>
@@ -138,12 +148,15 @@
       </div>
     </section><!-- End About Section -->
   
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="services skills-bg">
       <div class="container">
   
         <div class="section-title" data-aos="fade-in" data-aos-delay="50">
-          <h2>Skills</h2>
+          <h2 class="ml2">
+            <span class="letters">Skills
+              </span>
+            </h2>
           <p data-aos-delay="100">
             <!-- more hspace means less matter to write -->
             <marquee behavior="slide" data-aos="fade-left" style="text-align: center;">In the time span of around 2 years, I have acquired some skills and learnt about the below mentioned technologies & frameworks.</marquee>
@@ -156,7 +169,7 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-coin-stack bx-tada-hover"></i></div>
               <h4 class="title"><a href="https://www.oracle.com/in/database/what-is-database.html" target="_blank">Database</a></h4>
-              <p class="description">MongoDb : Intermediate <br>SQL : Intermediate</p>
+              <p class="description">MongoDb : Intermediate <br>SQL : Intermediate<br></p>
             </div>
           </div>
   
@@ -187,70 +200,102 @@
         </div>
   
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Skills Section -->
   
-    <!-- ======= Counts Section ======= -->
-    <!-- <section id="counts" class="counts  section-bg">
-      <div class="container">
-  
-        <div class="row no-gutters">
-  
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-  
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-  
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-  
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-  
-        </div>
-  
-      </div>
-    </section> End Counts Section -->  
+    
+<!-- ======= Testimonials Section ======= -->
+<section id="experience" class="testimonials section-bg">
+  <div class="container">
 
-    <!-- ======= Cta Section ======= -->
-    <!-- <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-  
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-  
+    <div class="section-title" data-aos="fade-in" data-aos-delay="500" style="padding-bottom: 0px;">
+      <h2 class="ml9">
+        <span class="letters">Experience
+          </span>
+        </h2>
+      <p data-aos="fade-left" data-aos-delay="200">During my experience of 2 years as a Full Stack Developer, I have worked and implemented some of the below mentioned projects.</p>
+    </div>
+
+    <div class="owl-carousel testimonials-carousel">
+
+      <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100" style="background-color: antiquewhite;">
+        <p style="background-color: #f4f9fc;">
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Currently working for the world's second largest reinsurance company on the development of UI, creating microservices using Spring Boot Framework and accessing data from Oracle
+Database.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <img src="assets/img/Infosys-Limited.png" class="testimonial-img" alt="">
+        <h3>Infosys Limited</h3>
+        <h4>Full Stack Developer</h4>
+        <h4 style="padding-bottom: 10px;">Jan 2019 to Present</h4>
       </div>
-    </section> End Cta Section -->
-  
+
+      <div class="testimonial-item" data-aos="fade-up" style="background-color: aliceblue;">
+        <p style="background-color: antiquewhite;">
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Has worked on the design and development of a Business to Consumer (B2C) responsive E-commerce web service.
+          The main focus was to develop services which are neat, clutter-free and have user-friendly interfaces.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <img src="assets/img/Infosys-Limited.png" class="testimonial-img" alt="">
+        <h3>Infosys Limited</h3>
+        <!-- <h4>Ceo &amp; Founder</h4> -->
+        <h4>Systems Engineer Trainee</h4>
+        <h4 style="padding-bottom: 10px;">June 2018 to Nov 2018</h4>
+      </div>
+
+      <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200" style="background-color: antiquewhite;">
+        <p style="background-color: #f4f9fc;">
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Facial Gender Classification : <br>Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <img src="assets/img/JIIT-logo.png" class="testimonial-img" alt="">
+        <h3>Jaypee Institute of Information Technology</h3>
+        <h4>Student</h4>
+        <h4 style="padding-bottom: 10px;">Jan 2018 to May 2018</h4>
+      </div>
+
+       <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300" style="background-color: aliceblue;">
+        <p style="background-color: antiquewhite;">
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Grocery Management App : <br>A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users and administrator.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <img src="assets/img/TCS-Logo.png" class="testimonial-img" alt="">
+        <h3>TCS</h3>
+        <h4>Summer Intern</h4>
+        <h4 style="padding-bottom: 10px;">Jan 2017 to May 2017</h4>
+      </div>
+
+       <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400" style="background-color: antiquewhite;">
+        <p style="background-color: #f4f9fc;">
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          A portfolio website showing the technologies I am skilled in alongwith the details of the projects completed. This website is made using various libraries and plugins like aos, carousel, animejs, venobox.   
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <img src="assets/img/IMG-20190910-WA0011.png" class="testimonial-img" alt="">
+        <h4 style="color: black; font-weight: bold;">Personal </h4>
+        <!-- <h4>Inspired by Corona</h4> May 2020 to Aug 2020-->
+        <h4 style="padding-bottom: 10px;"></h4>
+      </div> 
+
+    </div>
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+
+
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- <section id="testimonials" class="portfolio">
       <div class="container">
   
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Experience</h2>
+        <div class="section-title" data-aos="fade-in" data-aos-delay="50">
+          <h2 class="ml9">
+            <span class="text-wrapper">
+              <span class="letters">Experience</span>
+            </span>
+          </h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
   
@@ -272,7 +317,7 @@
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -282,7 +327,7 @@
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -292,7 +337,7 @@
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -302,7 +347,7 @@
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -312,7 +357,7 @@
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -322,7 +367,7 @@
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -332,7 +377,7 @@
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -342,7 +387,7 @@
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -352,7 +397,7 @@
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -360,78 +405,10 @@
         </div>
   
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> -->
+    <!-- End Portfolio Section -->
   
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-  
-        <div class="section-title" data-aos="fade-in" data-aos-delay="500">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-  
-        <div class="owl-carousel testimonials-carousel">
-  
-          <div class="testimonial-item" data-aos="fade-up">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-  
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-  
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-  
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-  
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-  
-        </div>
-  
-      </div>
-    </section><!-- End Testimonials Section -->
+    
   
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -598,7 +575,7 @@
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/raajanagrawal-14b5a510b" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -650,7 +627,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed &amp; developed by <a href="#about">Raajan Agrawal</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -668,7 +645,7 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
+  <script src="assets/vendor/animejs/anime.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
@@ -680,20 +657,68 @@
       document.getElementById('marqueestart1').start();
       // startmarquee = "true";  
     } 
-
-    const menuBtn = document.querySelector('.menu-btn');
-    let menuOpen = false;
-    menuBtn.addEventListener('click', () =>{
-      if(!menuOpen){
-        menuBtn.classList.add('open');
-        menuOpen = true;
-      }else{
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-      }
-    });
-
   </script>
 
 </body>
 </html>
+
+
+
+
+
+<!-- ======= Counts Section ======= -->
+     <!-- <section id="counts" class="counts  section-bg">
+      <div class="container">
+  
+        <div class="row no-gutters">
+  
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">232</span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">HELLOOOOOO</span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">1,463</span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">15</span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section> End Counts Section  -->
+
+    <!-- ======= Cta Section ======= -->
+    <!-- <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+  
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+  
+      </div>
+    </section> End Cta Section -->
+  
