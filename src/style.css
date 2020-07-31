@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #444485;
 }
 
 a {
@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   padding: 15px 0;
   background: rgba(103, 176, 209, 0.8);
+  /* background: rgba(103, 176, 209, 0.8); */
 }
 
 #header.header-transparent {
@@ -695,6 +696,12 @@ section {
   }
   }
 
+  /* .card:focus{
+  width: 500ox;
+  height: 500px;
+  background-color: black;
+} */
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -771,13 +778,31 @@ section {
 @media (max-width: 768px) {
   .icon-box {
     /* text-align: center; */
-    margin-left: 20%;
+    /* margin-left: 20%; */
+    margin: 0 15% 0 15%;
     /* margin-left: 13%; will work for smaller viewport width = 360px */
   }
 }
 
 .skills-bg{
   background-color: #e9eef0;
+}
+
+
+.service .container .work::before {
+  width: 100px;
+  height: 100px;
+  /* background-color: red; */
+  position: relative;
+  /* animation-name: altmarquee; */
+  /* animation-duration: 6s; */
+}
+
+@keyframes altmarquee {
+  0%   {left:0px; top:200px;}
+  50%  {left:0px; top:0px;}
+100%  {left:0px; top:0px;}
+  
 }
 
 /*--------------------------------------------------------------
@@ -1082,7 +1107,7 @@ section {
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 10px 0 5px 0;
   color: #111;
 }
@@ -1546,4 +1571,168 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+/* if between 768 and 886 white padding */
+/* style=flex for top to bottom btn
+margin-right 75% */
+/* @media (min-width: 768px) and (max-width:886px){
+.icofont-navigation-menu:before {
+  content: "\efa2";
+  margin-right: 77%;
+}
+}
+
+@media (min-width: 355px) and (max-width:768px){
+  .icofont-navigation-menu:before {
+    content: "\efa2";
+    margin-right: 80%;
+  }
+  } */
+/* from 360 to 740 */
+/* body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 3.5% 0% 2%;
+  left: 25%;
+  top: 15%;
+  width: 50%;
+  height: auto; /*74%*/
+  overflow: auto;
+  background-color: rgb(103,161,201);
+  border-radius: 8%;
+  box-shadow: 10px 10px 10px 0 rgba(147, 77, 81, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #e3e3ff;
+  margin: auto;
+  padding: 1%;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 5%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(133, 230, 217, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin: 3% 0% 3% 0%;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 2px 16px;
+  color: #444485;
+  font-weight: bold;
+}
+
+.demo {
+  opacity: 0.6;
+  border-style: solid;
+  border-color: darkslateblue;
+  border-radius: 15%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(172, 206, 235, 0.19);
 }
