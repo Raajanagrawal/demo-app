@@ -379,13 +379,23 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("assets/img/Sunset.jpg") top center;
-  background-size: cover;
   position: relative;
   margin-bottom: -90px;
+  background: url("assets/img/backgroundimg2.png") top center;
+  background-size: cover;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.90);
 }
 
 #hero .hero-container {
@@ -568,6 +578,10 @@ section {
   background-size: cover;
   padding: 25px 0 60px 0;
   position: relative;
+  animation-name: example;
+  animation-duration: 2s ;
+  /* animation-iteration-count: 1; */
+  animation-timing-function: linear;
 }
 
 .about::before {
@@ -1211,8 +1225,8 @@ section {
   left: 20px;
   right: 20px;
   background: #fff;
-  padding: 20px 0;
-  color: #2f4d5a;
+  /* padding: 20px 0; */
+  /* color: #2f4d5a; */
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   max-height: 95px;
   overflow: hidden;
@@ -1283,7 +1297,7 @@ section {
 
 .contact .info-box {
   color: #444444;
-  background: #fff;
+  /* background: #fff; */
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
@@ -1314,7 +1328,7 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .contact .php-email-form .validate {
@@ -1327,7 +1341,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  /* color: #fff; */
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1340,7 +1354,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  /* color: #fff; */
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1349,7 +1363,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  /* background: #fff; */
   text-align: center;
   padding: 15px;
 }
@@ -1430,7 +1444,8 @@ section {
 }
 
 #footer .footer-top .footer-info {
-  margin-top: -90px;
+  /* margin-top: -90px; */
+  /* commented for contact card going above */
   margin-bottom: 15px;
   background: white;
   color: #2f4d5a;
@@ -1615,6 +1630,7 @@ margin-right 75% */
 }
 
 /* The Modal (background) */
+@media (min-width: 900px) {
 .modal {
   display: none;
   position: fixed;
@@ -1736,3 +1752,104 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(172, 206, 235, 0.19);
 }
+
+/* hover one and reducing opacity for others */
+.testimonials-carousel:hover .testimonial-item{
+  opacity: 0.2;
+}
+
+.testimonials-carousel .testimonial-item:hover{
+  opacity: 1;
+}
+
+/* CSS Transitions for flipping box */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 330px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid;
+  border-radius: 2%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+.flip-card-back {
+  /* background-color: rgba(255,0,0,0.2); */
+  
+  /* color: white; */
+  transform: rotateY(180deg);
+}
+
+.flip-card-back .opa{
+  /*  */
+  /* position: absolute; */
+  /* opacity: 0.2; */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  
+}
+/* flip-box ends */
+
+
+/* .faded { */
+  /* opacity: 0.5; */
+/* } */
+
+.faded{
+  /* opacity: 1; */
+  animation-name: example;
+  animation-duration: 2s ;
+  /* animation-iteration-count: 1; */
+  animation-timing-function: linear;
+
+      /* -webkit-transform: rotateZ(-90deg);
+      -ms-transform: rotateZ(-90deg);
+      transform: rotateZ(-90deg);
+      transition-delay: 0.2s ;
+      } */
+    }
+  @keyframes example {
+    0%   { transform: rotateX(0deg);}
+    /* 25%  { transform: rotateX(90deg);} */
+    50%  { transform: rotateX(180deg);}
+    /* 75%  { transform: rotateX(270deg);} */
+    /* 100% { transform: rotateX(0deg);} */
+  }
+
+
+  .row:hover .flip-card {
+    opacity: 0.3;
+    border-radius: 20%;
+  }
+  
+  .row .flip-card:hover {
+    opacity: 1;
+  }
+    }
