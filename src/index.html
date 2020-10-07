@@ -52,15 +52,16 @@
         <!-- <a href=""><img src="assets/img/logo - Copy.png" alt="Raajan Agrawal" class="img-fluid"></a> -->
       </div>
 
-      <nav class="nav-menu d-none d-lg-block" data-aos="flip-up" >
+      <!-- closeModal if clicked on navbar after modal is opened -->
+      <nav class="nav-menu d-none d-lg-block rotate" data-aos="flip-up" onclick="closeModal()">
         <ul>
-          <li class="active"><a class = "bx bx-home-alt"  href="#hero"> Home </a></li>
-          <li><a class = "bx bx-user" href="#about"> About</a></li>
+          <li class="active"><a class = "bx bx-home-alt rotate"  href="#hero"> Home </a></li>
+          <li><a class = "bx bx-user rotate" href="#about"> About</a></li>
           <!-- onclick="marqueeFunction(marqueestart1)"  -->
-          <li><a class = "bx bx-game" href="#skills"> Skills</a></li>
-          <li><a class = "bx bx-shield" href="#experience"> Experience</a></li>
-          <li><a class = "bx bx-world" href="#team"> Hobbies</a></li>
-          <li><a class="bx bx-phone-call" href="#contact"> Contact </a></li>
+          <li><a class = "bx bx-game rotate" href="#skills"> Skills</a></li>
+          <li><a class = "bx bx-shield rotate" href="#experience"> Experience</a></li>
+          <li><a class = "bx bx-world rotate" href="#team"> Hobbies</a></li>
+          <li><a class="bx bx-phone-call rotate" href="#contact"> Contact </a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -98,13 +99,19 @@
               <!-- <img src="assets/img/RealMadridlogo.png" alt="Avatar" style="width:300px;height:300px;"> -->
         <section id="about" class="about faded">
           <div class="container" id="rotateabout">
-            <div class="row no-gutters"> <div class="content col-xl-6 d-flex align-items-stretch" data-aos="fade-up">
-                <h3> 
-                  <marquee loop=1 behavior="slide" scrollamount="10" data-aos="fade-left">
-                  <div class="photomarquee">
-                  <img class="photo" src="assets/img/photo2.png">
-                  </div>	
-                </marquee>
+
+            <!-- <img id="face-img" class="face-img" src="http://www.adhamdannaway.com/wp-content/themes/dannaway/images/adham-dannaway-designer-coder.jpg"
+            alt="just try it">
+            <div id="designer-img" class="designer-img" style="left:100px; opacity:1; width: 420px;"></div>
+            <div id="coder-img" class="designer-img" style="right:100px; opacity:1; width: 420px;"></div>
+            <div id="designer-bg" class="designer-img" style="left:100px; opacity:1;"></div>
+            <div id="coder-bg" class="designer-img" style="right:100px; opacity:1; "></div> -->
+
+            <!-- <div class="containerpic" style="width: 500px; background-color: black;">
+            <img src="assets/img/watchleft.png"  class="circle-left">
+            <img src="assets/img/watchright.png"  class="circle-right">
+</div> -->
+            
                   <!-- <a style = "left:7%;" class="bx bx-body about-btn" >About me&nbsp;
                     <i style = "font-size: 40px;"class="bx bx-tada bx-chevron-right" data-aos="fade-up" data-aos-delay="600"></i>
                     </a> -->
@@ -117,42 +124,52 @@
                       <br><marquee loop=1 behavior="slide" scrollamount="4" id="marqueestart" data-aos="fade-left" data-aos-delay="500">and creating intuitive user experiences.</marquee>
                     </div> -->
                    
-                    <div>
-                      <span data-aos="fade-left" data-aos-delay="200">I'm a learning Full Stack Web Developer,</span>
-                      <span data-aos="fade-left" data-aos-delay="300">working for Infosys Limited in Bangalore.</span>
-                      <span data-aos="fade-left" data-aos-delay="400">I have a passion for thoughtful UI design</span> 
-                      <span data-aos="fade-left" data-aos-delay="500">and creating intuitive user experiences.</span>
-                    </div>
-    
-                    </h3>
-                
-              </div>
-              <div class="col-xl-6 d-flex align-items-stretch">
+
+
+                    <div class="row no-gutters"> <div class="content col-xl-6 d-flex align-items-stretch" data-aos="fade-up">
+                      <h3> 
+                        <marquee loop=1 behavior="slide" scrollamount="10" data-aos="fade-left">
+                        <div class="photomarquee">
+                        <img class="photo" src="assets/img/photo2.png">
+                        </div>	
+                      </marquee>
+                      <div>
+                        <span data-aos="fade-left" data-aos-delay="200">I'm a learning Full Stack Web Developer,</span>
+                        <span data-aos="fade-left" data-aos-delay="300">working for Infosys Limited in Bangalore.</span>
+                        <span data-aos="fade-left" data-aos-delay="400">I have a passion for thoughtful UI design</span> 
+                        <span data-aos="fade-left" data-aos-delay="500">and creating intuitive user experiences.</span>
+                      </div>
+      
+                      </h3>
+                </div> 
+
+               <div class="col-xl-6 d-flex align-items-stretch">
                 <div class="icon-boxes d-flex flex-column justify-content-center" data-aos-delay="200" >
                   <div class="row">
                     <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                       <i class="bx bx-receipt bx-tada"></i>
-                      <h4>Corporis voluptates sit</h4>
-                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                      <h4>Android Beginner</h4>
+                      <p>Internshala</p>
                     </div>
                     <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                       <i class="bx bx-cube-alt bx-spin"></i>
-                      <h4>Ullamco laboris nisi</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                      <h4>Java Developer</h4>
+                      <p>Infosys Limited</p>
                     </div>
                     <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="600">
                       <i class="bx bx-images bx-flashing"></i>
-                      <h4>Labore consequatur</h4>
-                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                      <h4>Angular Developer</h4>
+                      <p>Infosys Limited</p>
                     </div>
                     <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="800">
                       <i class="bx bx-shield bx-burst"></i>
-                      <h4>Beatae veritatis</h4>
-                      <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                      <h4>Agile Methodologies</h4>
+                      <p>Infosys Limited</p>
                     </div>
                   </div>
-                </div><!-- End .content-->
-              </div>
+                </div>
+                
+              </div> 
             </div>
           </div>  
         </section><!-- End About Section -->
@@ -173,7 +190,7 @@
         </p> -->
 
         <!-- <div class="" data-aos-delay="100"> -->
-          <span data-aos="fade-left" data-aos-delay="400" style="text-align: center;">In the time span of around 2 years, I have acquired some skills and learnt about the below mentioned technologies & frameworks.</span>
+          <span data-aos="fade-left" data-aos-delay="400" style="text-align: center;">In the time span of around 2.5 years, I have acquired some skills and learnt about the below mentioned technologies & frameworks.</span>
           <span data-aos="fade-right" data-aos-delay="600" style="text-align: center;">Here are some things on which I am currently working and getting some experience.</span>
         <!-- </div> -->
         </div>
@@ -204,7 +221,7 @@
           </div>
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="750">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="750" style="width: inherit;">
               <div class="icon"><i class="bx bx-body bx-tada-hover"></i></div>
               <h4 class="title"><a href="https://www.skillsyouneed.com/interpersonal-skills.html" target="_blank">Interpersonal</a></h4>
               <p class="description">Hardworking <br>Trustworthy <br>Punctuality <br> Quick Learner</p>
@@ -220,7 +237,7 @@
 <section id="experience" class="testimonials section-bg">
   <div class="container">
 
-    <div class="section-title" data-aos="fade-in" data-aos-delay="500" style="padding-bottom: 0px;">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="500" style="padding-bottom: 0px;" onclick="closeModal()">
       <h2 class="ml9">
         <span class="letters">Experience
           </span>
@@ -232,13 +249,13 @@
     <div class="owl-carousel testimonials-carousel">
 
       <div class="testimonial-item hover-shadow" data-aos="fade-up" data-aos-delay="100" style="background-color: antiquewhite;">
-        <p style="background-color: #f4f9fc;">
+        <p style="background-color: #f4f9fc;" >
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-        <b>Currently working for the world's second largest reinsurance company on the development of UI, creating microservices using Spring Boot Framework and accessing data from Oracle
+        <b onclick="closeModal()">Currently working for the world's second largest reinsurance company on the development of UI, creating microservices using Spring Boot Framework and accessing data from Oracle
 Database.</b>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           <br>
-          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="openModal();currentSlide(1)"></span>
+          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="toggleModal();currentSlide(1)"></span>
         </p>
         <img src="assets/img/Infosys-Limited.png" class="testimonial-img" alt="">
         <h3>Infosys Limited</h3>
@@ -249,11 +266,11 @@ Database.</b>
       <div class="testimonial-item hover-shadow" data-aos="fade-up" style="background-color: aliceblue;">
         <p style="background-color: antiquewhite;">
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-         <b>Worked on the development of a Business to Consumer (B2C) responsive E-commerce web service.
+         <b onclick="closeModal()">Worked on the development of a Business to Consumer (B2C) responsive E-commerce web service.
           The main focus was to design & develop services which are neat, clutter-free and have user-friendly interfaces.</b>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           <br>
-          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="openModal();currentSlide(2)"></span>
+          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="toggleModal();currentSlide(2)"></span>
         </p>
         <img src="assets/img/Infosys-Limited.png" class="testimonial-img" alt="">
         <h3>Infosys Limited</h3>
@@ -264,10 +281,10 @@ Database.</b>
       <div class="testimonial-item hover-shadow" data-aos="fade-up" data-aos-delay="200" style="background-color: antiquewhite;">
         <p style="background-color: #f4f9fc;">
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          <b>Facial Gender Classification : <br>Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.</b>
+          <b onclick="closeModal()">Facial Gender Classification : <br>Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.</b>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           <br>
-          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="openModal();currentSlide(3)"></span>
+          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="toggleModal();currentSlide(3)"></span>
         </p>
         <img src="assets/img/JIIT-logo.png" class="testimonial-img" alt="">
         <h3>Jaypee Institute of Information Technology</h3>
@@ -275,13 +292,13 @@ Database.</b>
         <h4 style="padding-bottom: 10px;">Jan 2018 to May 2018</h4>
       </div>
 
-       <div class="testimonial-item hover-shadow" data-aos="fade-up" data-aos-delay="300" style="background-color: aliceblue;">
+       <div class="testimonial-item hover-shadow" data-aos="fade-up" data-aos-delay="300" style="background-color: #f0f8ff;">
         <p style="background-color: antiquewhite;">
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          <b>Grocery Management App : <br>A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users and administrator.</b>
+          <b onclick="closeModal()">Grocery Management App : <br>A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users and administrator.</b>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           <br>
-          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="openModal();currentSlide(4)"></span>
+          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="toggleModal();currentSlide(4)"></span>
         </p>
         <img src="assets/img/TCS-Logo.png" class="testimonial-img" alt="">
         <h3>TCS</h3>
@@ -289,20 +306,34 @@ Database.</b>
         <h4 style="padding-bottom: 10px;">Jan 2017 to May 2017</h4>
       </div>
 
-       <!-- <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400" style="background-color: antiquewhite;">
+        <div class="testimonial-item hover-shadow" data-aos="fade-up" data-aos-delay="400" style="background-color: antiquewhite;">
         <p style="background-color: #f4f9fc;">
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          <b>A portfolio website showing the technologies I am skilled in alongwith the details of the projects completed. This website is made using various libraries and plugins like aos, carousel, animejs, venobox.</b>
+          <b onclick="closeModal()">A portfolio website showing the technologies I am skilled in alongwith the details of the projects completed. This website is made using various libraries and plugins like aos, carousel, animejs, venobox.</b>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           <br>
-          <span class="bx bx-atom bx-spin" style="font-size: xx-large;" onclick="openModal();currentSlide(5)"></span>
+          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="toggleModal();currentSlide(5)"></span>
         </p>
         <img src="assets/img/IMG-20190910-WA0011.png" class="testimonial-img" alt="">
         <h4 style="color: black; font-weight: bold;">Personal </h4>
-        <h4>Inspired by Corona</h4> May 2020 to Aug 2020
+        <h4> May 2020 to Aug 2020</h4>
         <h4 style="padding-bottom: 10px;"></h4>
-      </div>  -->
+      </div>  
 
+      <div class="testimonial-item hover-shadow" data-aos="fade-up" data-aos-delay="300" style="background-color: #f0f8ff;">
+        <p style="background-color: antiquewhite;">
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          <b onclick="closeModal()">Coordinates App : <br>An App was developed where aim was to enter some user details, fetch the current location coordinates anywhere in the world and capture photograph from live video.</b>
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          <br>
+          <span class="bx bx-atom bx-spin cursor" style="font-size: xx-large;" onclick="toggleModal();currentSlide(6)"></span>
+        </p>
+        <img src="assets/img/IMG-20190910-WA0011.png" class="testimonial-img" alt="">
+        <h3>Personal</h3>
+        <!-- <h4 style="font-weight:bold">Summer Intern</h4> -->
+        <h4 style="padding-bottom: 10px;">Aug 2020 to Sept 2020</h4>
+      </div>
+      <!-- An App was developed where aim was to fetch the current location coordinates of the user anywhere in the world, enter it's details and capture photograph from live video. -->
     </div>
 
   </div>
@@ -311,76 +342,97 @@ Database.</b>
 
       
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <span class="close cursor rotate" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
       <!-- <div class="numbertext">1 / 4</div> -->
       <!-- <img src="assets/img/RealMadridlogo.png" style="width:100%"> -->
-      <div>Currently working for the world's second largest reinsurance company on the development of UI, creating microservices using Spring Boot Framework and accessing data from Oracle
-        Database.Currently working for the world's second largest reinsurance company on the development of UI, creating microservices using Spring Boot Framework and accessing data from Oracle
-        Database.Currently working for the world's second largest reinsurance company on the development of UI, creating microservices using Spring Boot Framework and accessing data from Oracle
-        Database.</div>
+      <div>I am currently working in a Reinsurance based project whose aim is to make it possible for primary insurers to keep less capital on hand
+         to cover more losses. To fetch data from the Oracle database, Spring Data JPA is used. Rest Microservices with SpringBoot 
+         Framework as it helps in quick configurations. Angular 7 for Front-end development and RabbitMq as a messaging system.
+      </div>
     </div>
 
     <div class="mySlides">
       <!-- <div class="numbertext">2/4</div> -->
       <!-- <img src="assets/img/Sunset.jpg" style="width:100%"> -->
-      <div>Has worked on the design and development of a Business to Consumer (B2C) responsive E-commerce web service.
-        The main focus was to develop services which are neat, clutter-free and have user-friendly interfaces.Has worked on the design and development of a Business to Consumer (B2C) responsive E-commerce web service.
-        The main focus was to develop services which are neat, clutter-free and have user-friendly interfaces.Has worked on the design and development of a Business to Consumer (B2C) responsive E-commerce web service.
-        The main focus was to develop services which are neat, clutter-free and have user-friendly interfaces.
+      <div>A B2C web service was developed where the users could register themselves and give their preferred choice of brands.
+         They could also search the stationery items, look at the product description, price, quantity available and store them 
+         in their cart. At the time of checkout they could add or delete the products saved in the cart and also apply coupons if any. 
        </div>
     </div>
 
     <div class="mySlides">
       <!-- <div class="numbertext">3 / 4</div> -->
       <!-- <img src="assets/img/logo.png" style="width:100%"> -->
-      <div>Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.
-        Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.
-        Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.
-        Gender Identification is a basic task of face recognition, deciding the gender according to the face image using Haar Feature selection and Viola-Jones image algorithms.
+      <div>For the face detection, face alignment technique was primarily used. The technique identifies the geometric structure of 
+        the human face in digital images. It determines the facial components using multi-quantized local binary patterns.
+        The detector required full frontal view of upright faces, the entire face must be pointed towards the camera and not be tilted to either side. 
+
       </div>
     </div>
     
     <div class="mySlides">
       <!-- <div class="numbertext">4 / 4</div> -->
       <!-- <img src="img_lights_wide.jpg" style="width:100%"> -->
-      <div>A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users and administrator.
-        A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users and administrator.
-        A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users and administrator.
-        A Grocery Management App was designed and developed which was based on Core Java had three separate views for registered users, non-registered users.
+      <div>A Grocery Management App was developed where the users could add, delete and edit the products entered. The users could also write reviews
+        about the product bought. They could also filter out the brand options of the product and sort them according to their price. The main aim was 
+        to develop an app which has user-friendly interface, so that it is easier for users to select the products.
+
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">5 / 4</div> -->
+      <!-- <img src="img_lights_wide.jpg" style="width:100%"> -->
+      <div>This portfolio website was developed to show some of the skills and technologies I am experienced in and still learning. In it I have used 
+        various plugins and libraries such as AOS, venobox, animejs, boxicons and carousel. It has helped me a lot more than I expected and designing it 
+        has really been a great experience and also a tiring one to be honest :)
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext"> 6/ 4</div> -->
+      <!-- <img src="img_lights_wide.jpg" style="width:100%"> -->
+      <div>A basic survey application form was developed where the users could register their details and could get the coordinates of their current location. 
+        They could select some of the things they like to eat & drink. Also, they can capture a picture from their ongoing live stream and submit their details.
+        Just come out of your houses and boom, your coordinates are there with your smart picture.
       </div>
     </div>
     
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   <div> <a class="prev" onclick="plusSlides(-1)" style="z-index: 10000;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="z-index: 10000;">&#10095;</a></div>
 
     <div class="caption-container">
+     
       <p style="margin-bottom: 0%;"id="caption"></p>
+      
     </div>
-
-<div class="row">
-    <div class="column">
-      <img class="demo cursor" src="assets/img/Reinsurance_company.jpg" style="width:100%;" onclick="currentSlide(1)" alt="INFOSYS LIMITED">
+    <!-- scroll -->
+<div class="row" style="margin: 0 12%;">
+    <div style="padding: 0 22%;">
+      <!-- [style.display]="active ? 'none' : 'inline' " -->                   
+      <img class="demo cursor"   src="assets/img/Reinsurance_company.jpg" onclick="currentSlide(1)" alt="INFOSYS LIMITED">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="assets/img/Infosys-Limited.png" style="width:100%;" onclick="currentSlide(2)" alt="E-COMMERCE WEB SERVICE">  
+    <div style="padding: 0 22%;">
+      <img class="demo cursor " src="assets/img/B2C_webservice.jpg" onclick="currentSlide(2)" alt="E-COMMERCE WEB SERVICE">  
     </div>
-    <div class="column">
-      <img class="demo cursor" src="assets/img/Facial_Gender_classification.png" style="width:100%" onclick="currentSlide(3)" alt="FACIAL GENDER CLASSIFICATION">
+    <div style="padding: 0 14%;">
+      <img class="demo cursor " src="assets/img/Facial_Gender_classification.png" onclick="currentSlide(3)" alt="FACIAL GENDER CLASSIFICATION">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="assets/img/grocery_management.png" style="width:100%" onclick="currentSlide(4)" alt="GROCERY MANAGEMENT">
+    <div style="padding: 0 9%;">
+      <img class="demo cursor" src="assets/img/grocery_management2.png" onclick="currentSlide(4)" alt="GROCERY MANAGEMENT">
+    </div>
+    <div style="padding: 0 16%;">
+      <img class="demo cursor " src="assets/img/background3.png" onclick="currentSlide(5)" alt="PORTFOLIO WEBSITE">  
+    </div>
+    <div style="margin: 0 14%;" >
+      <img class="demo cursor " src="assets/img/coordinatesApp.png"  onclick="currentSlide(6)" alt="COORDINATES APP">
     </div>
   </div>  
   </div>
 </div>
-
-
-
-
-
 
 
 <!-- ======= Portfolio Section ======= -->
@@ -518,20 +570,6 @@ Database.</b>
 
   <div class="row">
 
-
-    <!-- <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/img/RealMadridlogo.png" alt="Avatar" style="width:300px;height:300px;">
-        </div>
-        <div class="flip-card-back">
-          <h1>John Doe</h1> 
-          <p>Architect & Engineer</p> 
-          <p>We love that guy</p>
-        </div>
-      </div>
-    </div> -->
-
     <div class="col-lg-4 col-md-6 flip-card" >
       <div style="text-align: center;font-family: Dancing Script; font-size: 30px; color: darkmagenta;"><span style="font-size: 15px;">⚽</span>Shaolin Soccer<span style="font-size: 15px;">⚽</span></div>
       <div class="member flip-card-inner" data-aos="fade-up">
@@ -580,8 +618,7 @@ Database.</b>
     </div>
 
 
-    <!-- This belongs to you, but everyone else uses it more.
-    your name -->
+
     <!-- <audio id='mySound' src='assets/img/Shankar Mahadevan Breathless Theme Music Instrumental.mp3'></audio> -->
     <!-- onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')" -->
     <div class="col-lg-4 col-md-6 flip-card">
@@ -660,7 +697,7 @@ Database.</b>
       <p class="pb-3" style="color: black;"><em>Please feel free to contact me on any of the following platforms.</em></p>
       
       <p style="font-size: 20px;">
-        <br><strong>Address: </strong>Doddathoguru, Electronic City Phase 1, <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Bengaluru Karnataka 560100, India<br><br>
+        <br><strong>Address: </strong>Doddathoguru, Electronic City Phase 1, <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Bengaluru, Karnataka - 560100, India<br><br>
         <strong>Phone:</strong> +91-9711793456<br>
         <strong>Email:</strong> raajanagrawal@gmail.com<br>
       </p>
@@ -766,12 +803,22 @@ document.getElementById('marqueestart1').start();
 // startmarquee = "true";  
 } 
 
-function openModal() {
-document.getElementById("myModal").style.display = "block";
-}
+// function openModal() {
+// document.getElementById("myModal").style.display = "block";
+// }
 
 function closeModal() {
 document.getElementById("myModal").style.display = "none";
+}
+
+function toggleModal(){
+  if(document.getElementById("myModal").style.display == "block"){
+    document.getElementById("myModal").style.display = "none";
+  }
+  else{
+    document.getElementById("myModal").style.display = "block";
+    // alert("IT SHOULD OPEN"+document.getElementById("myModal").style.display);
+  }
 }
 
 var slideIndex = 1;
@@ -790,17 +837,19 @@ var i;
 var slides = document.getElementsByClassName("mySlides");
 var dots = document.getElementsByClassName("demo");
 var captionText = document.getElementById("caption");
+var slidespic = document.getElementById("slidespic");
 if (n > slides.length) {slideIndex = 1}
 if (n < 1) {slideIndex = slides.length}
 for (i = 0; i < slides.length; i++) {
 slides[i].style.display = "none";
 }
 for (i = 0; i < dots.length; i++) {
-dots[i].className = dots[i].className.replace(" active", "");
+dots[i].className = dots[i].className.replace(" activate", "");
 }
 slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
+dots[slideIndex-1].className += " activate";
 captionText.innerHTML = dots[slideIndex-1].alt;
+// slidespic.innerHTML = dots[slideIndex-1].src;
 }
 </script>
 
@@ -878,6 +927,10 @@ function StopSound(soundobj) {
     thissound.currentTime = 0;
 }
 </script> 
+
+
+<script src="http://www.adhamdannaway.com/wp-content/themes/dannaway/js/script.js"></script>
+<script src="http://www.adhamdannaway.com/wp-content/themes/dannaway/js/clipboard.js-master/dist/clipboard.min.js"></script>
 </body>
 </html>
 
