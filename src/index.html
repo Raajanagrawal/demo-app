@@ -703,18 +703,34 @@ Database.</b>
       </p>
       
       <div class="social-links mt-3" style="font-size: 200%;">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="https://www.linkedin.com/in/raajanagrawal-14b5a510b" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/raajanagrawal-14b5a510b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </div>
 
   <div class="col-lg-6 col-md-6">
-    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-      <div class="form-row">
+
+  <form action="mailto:raajanagrawal@gmail.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    E-mail:<br>
+    <input type="text" name="mail"><br>
+    Comment:<br>
+    <input type="text" name="comment" size="50"><br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </div>
+  
+    <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+      
+      
+      
+      <!-- commented separately -->
+      <!-- <div class="form-row">
         <p style="color: black;"><em>You can also give your valuable feedback through mail. </em></p>
         <div class="col-md-6 form-group">
           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -724,8 +740,13 @@ Database.</b>
           <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
           <div class="validate"></div>
         </div>
-      </div>
-      <div class="form-group">
+      </div> -->
+
+
+
+
+
+      <!-- <div class="form-group">
         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
         <div class="validate"></div>
       </div>
@@ -739,8 +760,8 @@ Database.</b>
         <div class="sent-message">Your message has been sent. Thank you!</div>
       </div>
       <div class="text-center"><button type="submit">Send Message</button></div>
-    </form>
-  </div>
+    </form> -->
+  
 
 
 
