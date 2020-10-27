@@ -704,15 +704,15 @@ Database.</b>
   <div class="container">
   <div class="row" data-aos="fade-up" data-aos-delay="200">
 
-  <div class="col-lg-6 col-md-6" style="box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);padding: 30px;">
+  <div class="col-lg-6 col-md-6" style="box-shadow: 0 0 20px rgba(214, 215, 216, 0.6);padding: 30px;">
     <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
       <!-- <h3>Contact</h3> -->
       <p class="pb-3" style="color: black;"><em>Please feel free to contact me on any of the following platforms.</em></p>
       
       <p style="font-size: 20px;">
-        <br><strong>Address: </strong>Doddathoguru, Electronic City Phase 1, <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Bengaluru, Karnataka - 560100, India<br><br>
-        <strong>Phone:</strong> +91-9711793456<br>
-        <strong>Email:</strong> raajanagrawal@gmail.com<br>
+        <br><strong>Address: </strong>Doddathoguru, Electronic City Phase 1, Bengaluru, Karnataka - 560100, India.<br><br>
+        <strong>Phone:</strong> +91-9711793456<br><br>
+        <strong>Email:</strong> raajanagrawal@gmail.com<br><br>
       </p>
       
       <div class="social-links mt-3" style="font-size: 200%;">
@@ -725,67 +725,62 @@ Database.</b>
     </div>
   </div>
 
-  <div class="col-lg-6 col-md-6">
+  <div class="col-lg-6 col-md-6 php-email-form" style="box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);padding: 30px;">
+      <!-- <a href="mailto:raajanagrawal@gmail.com">Send a mail</a> -->
 
-  <!-- <form action="mailto:raajanagrawal@gmail.com" method="post" enctype="text/plain">
-    Name:<br>
-    <input type="text" name="name"><br>
-    E-mail:<br>
-    <input type="text" name="mail"><br>
-    Comment:<br>
-    <input type="text" name="comment" size="50"><br><br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
-   -->
-   <!-- latest -->
-   <!-- <a href="mailto:raajanagrawal@gmail.com">Send a mail</a> -->
-  
-   
+  <div class="form-row footer-info" data-aos="fade-up" data-aos-delay="50">
+    <p class="pb-3"  style="color: black;"><em>Please give your valuable feedback through Email. </em></p>
    <form name="contact" method="POST" data-netlify="true">
-     <p>
+
+    <div class="form-group" style="padding-top: 10%;">
+      <!-- <label >First name:</label> -->
+      <!-- <input type="text" id="fname" name="fname" placeholder="Enter your name"> -->
+      
+      <!-- <label>Name : </label> -->
+      
+      <input type="text" name="name" style="font-weight: bold; width: 150%;" class="form-control" id="name" placeholder="Name" data-rule="minlen:3" data-msg="Is this really your name!!"/>
+      <!-- <div class="validate"></div> -->
+    </div>
+    <div class=" form-group" style="padding-top: 10%;">
+      <!-- <label>Email : </label> -->
+      <input type="email"  name="email" style="font-weight: bold; width: 150%;" id="email" class="form-control" placeholder="Email" data-rule="email" data-msg="Please enter a valid email." />
+
+      <div class="validate"></div>
+    </div>
+    <div class=" form-group" style="padding-top: 10%;">
+    <p>
+      <!-- <label>Message: </label>  -->
+        <input type="textarea"  name="message" style="font-weight: bold; width: 150%; height: 200%;" id="message" class="form-control" placeholder="Enter your Message" data-rule="minlen:4" data-msg="Please enter a message." />
+    </p>
+  </div>
+    <p style="padding: 20% 0 0 50%;">
+      <button type="submit" >Send</button>
+    </p>
+  </form>
+  </div>
+</div>
+    <!-- <p>
        <label>Your Name: <input type="text" name="name" /></label>   
      </p>
      <p>
        <label>Your Email: <input type="email" name="email" /></label>
-     </p>
-     <p>
+     </p> -->
+     <!-- <p>
        <label>Your Role: <select name="role[]" multiple>
          <option value="leader">Leader</option>
          <option value="follower">Follower</option>
        </select></label>
-     </p>
-     <p>
-       <label>Message: <textarea name="message"></textarea></label>
-     </p>
-     <p>
-       <button type="submit">Send</button>
-     </p>
-   </form>
-  
+     </p> -->
+
+     
+  </div>
   </div>
   
     <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
       
-      
-      
-      <!-- commented separately -->
-      <!-- <div class="form-row">
-        <p style="color: black;"><em>You can also give your valuable feedback through mail. </em></p>
-        <div class="col-md-6 form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-          <div class="validate"></div>
-        </div>
-        <div class="col-md-6 form-group">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-          <div class="validate"></div>
-        </div>
-      </div> -->
 
 
-
-
-
-      <!-- <div class="form-group">
+       <!-- <div class="form-group">
         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
         <div class="validate"></div>
       </div>
@@ -799,7 +794,7 @@ Database.</b>
         <div class="sent-message">Your message has been sent. Thank you!</div>
       </div>
       <div class="text-center"><button type="submit">Send Message</button></div>
-    </form> -->
+    </form>  -->
   
 
 
