@@ -43,7 +43,7 @@
 <body>
   
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-top header-transparent" onclick="closeModal()">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto" data-aos="flip-up">
@@ -70,7 +70,7 @@
 
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" >   
+  <section id="hero"onclick="closeModal()" >   
   <div class="hero-container" data-aos="fade-up" data-aos-delay="100">
     <!-- <h1>Welcome, I'm Raajan. </h1> -->
     <h1 style="color: lightblue;">
@@ -97,7 +97,7 @@
         <!-- ======= About Section ======= -->
         
               <!-- <img src="assets/img/RealMadridlogo.png" alt="Avatar" style="width:300px;height:300px;"> -->
-        <section id="about" class="about faded">
+        <section id="about" class="about faded" onclick="closeModal()">
           <div class="container" id="rotateabout">
 
             <!-- <img id="face-img" class="face-img" src="http://www.adhamdannaway.com/wp-content/themes/dannaway/images/adham-dannaway-designer-coder.jpg"
@@ -124,15 +124,28 @@
                       <br><marquee loop=1 behavior="slide" scrollamount="4" id="marqueestart" data-aos="fade-left" data-aos-delay="500">and creating intuitive user experiences.</marquee>
                     </div> -->
                    
+                    <!-- <marquee loop=1 behavior="slide" scrollamount="10" data-aos="fade-left">
+                      <div class="photomarquee">
+                      <img class="photo" src="assets/img/photo2.png">
+                      </div>	
+                    </marquee> -->
 
 
                     <div class="row no-gutters"> <div class="content col-xl-6 d-flex align-items-stretch" data-aos="fade-up">
                       <h3> 
-                        <marquee loop=1 behavior="slide" scrollamount="10" data-aos="fade-left">
-                        <div class="photomarquee">
-                        <img class="photo" src="assets/img/photo2.png">
-                        </div>	
-                      </marquee>
+                        <marquee loop=1 behavior="slide" scrollamount="10" >
+                          <div>
+                            <!--  -->
+                          <img class="photomarquee" style="margin-right: -8px;" src="assets/img/Untitled.png" data-aos="fade-right">
+                          <!-- class="photo" -->
+                          <img src="assets/img/2Untitled.png" data-aos="fade-left">
+                          </div>	
+                        </marquee>
+                        <!-- <marquee loop=1 behavior="slide" scrollamount="10" data-aos="fade-left"> -->
+                        <!-- <div class="photomarquee"> -->
+                        <!-- <img class="photo" src="assets/img/photo2 -right.png"> -->
+                        <!-- </div>	 -->
+                      <!-- </marquee> -->
                       <div>
                         <span data-aos="fade-left" data-aos-delay="200">I'm a learning Full Stack Web Developer,</span>
                         <span data-aos="fade-left" data-aos-delay="300">working for Infosys Limited in Bangalore.</span>
@@ -175,7 +188,7 @@
         </section><!-- End About Section -->
       
      <!-- ======= Skills Section ======= -->
-     <section id="skills" class="services skills-bg">
+     <section id="skills" class="services skills-bg" onclick="closeModal()">
       <div class="container">
   
         <div class="section-title" data-aos="fade-in" data-aos-delay="50">
@@ -560,7 +573,7 @@ Database.</b>
 
 
 <!-- ======= Team Section ======= -->
-<section id="team" class="team" style="padding-bottom: 5%;">
+<section id="team" class="team" style="padding-bottom: 6%;" onclick="closeModal()">
 <div class="container">
 
   <div class="section-title" data-aos="fade-in" data-aos-delay="100" style="padding-bottom: 0px;">
@@ -573,7 +586,7 @@ Database.</b>
     <div class="col-lg-4 col-md-6 flip-card" >
       <div style="text-align: center;font-family: Dancing Script; font-size: 30px; color: darkmagenta;"><span style="font-size: 15px;">⚽</span>Shaolin Soccer<span style="font-size: 15px;">⚽</span></div>
       <div class="member flip-card-inner" data-aos="fade-up">
-        <div class="pic flip-card-front"><img style = "margin: 0%;" src="assets/img/Hobbies3.jpg" class="img-fluid" alt=""></div>
+        <div class="pic flip-card-front"><img style = "margin: 0%;" src="assets/img/download.jpg" class="img-fluid" alt=""></div>
         <div class="flip-card-back" style="color: lightblue; background : url(assets/img/football-background.jpg) top center no-repeat; padding: 4%; ">
           <h1>Football</h1> 
           <h3><br>Be it Football, Soccer, Futboll, Futebol or any other name, the love and passion for the game remains the same.</h3>
@@ -624,7 +637,7 @@ Database.</b>
     <div class="col-lg-4 col-md-6 flip-card">
       <div style="text-align: center;font-family: Dancing Script; font-size: 30px; color: darkmagenta;"><span style="font-size: 15px;">🎵</span>Some Time Travel<span style="font-size: 15px;">🎵</span></div>
       <div class="member flip-card-inner" data-aos="fade-up" data-aos-delay="150">
-        <div class="pic flip-card-front"><img style = "margin: 0%;" src="assets/img/pngtree-technology-light-and-beautiful-music-rhythm-poster-background-material-image_128878.jpg" class="img-fluid" alt=""></div>
+        <div class="pic flip-card-front"><img style = "margin: 0%;" src="assets/img/download2.jpg" class="img-fluid" alt=""></div>
         <div class="flip-card-back" style="color: lightblue; background : url(assets/img/Apple-Music-icon-002.jpg) top center no-repeat;padding: 4%;">
           <h1>Music</h1> 
           <!-- <p>Architect & Engineer</p>  -->
@@ -649,7 +662,7 @@ Database.</b>
 </section><!-- End Team Section -->
 
 <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact section-bg">
+<section id="contact" class="contact section-bg" onclick="closeModal()">
 <div class="container">
 
   <div class="section-title" data-aos="fade-in" data-aos-delay="100">
@@ -714,7 +727,7 @@ Database.</b>
 
   <div class="col-lg-6 col-md-6">
 
-  <form action="mailto:raajanagrawal@gmail.com" method="post" enctype="text/plain">
+  <!-- <form action="mailto:raajanagrawal@gmail.com" method="post" enctype="text/plain">
     Name:<br>
     <input type="text" name="name"><br>
     E-mail:<br>
@@ -723,6 +736,32 @@ Database.</b>
     <input type="text" name="comment" size="50"><br><br>
     <input type="submit" value="Send">
     <input type="reset" value="Reset">
+   -->
+   <!-- latest -->
+   <!-- <a href="mailto:raajanagrawal@gmail.com">Send a mail</a> -->
+  
+   
+   <form name="contact" method="POST" data-netlify="true">
+     <p>
+       <label>Your Name: <input type="text" name="name" /></label>   
+     </p>
+     <p>
+       <label>Your Email: <input type="email" name="email" /></label>
+     </p>
+     <p>
+       <label>Your Role: <select name="role[]" multiple>
+         <option value="leader">Leader</option>
+         <option value="follower">Follower</option>
+       </select></label>
+     </p>
+     <p>
+       <label>Message: <textarea name="message"></textarea></label>
+     </p>
+     <p>
+       <button type="submit">Send</button>
+     </p>
+   </form>
+  
   </div>
   
     <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
