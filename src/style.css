@@ -368,9 +368,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -382,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-#hero::before {
+#home::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0,0,0,0.90);
 }
 
-#hero .hero-container {
+#home .home-container {
   position: absolute;
   bottom: 0;
   top: 0;
@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#hero h1 {
+#home h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: -1px 0 2px #2f4d5a;
 }
 
-#hero h2 {
+#home h2 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 20px;
@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: -1px 0 2px #2f4d5a;
 }
 
-#hero .btn-get-started {
+#home .btn-get-started {
   font-size: 36px;
   display: inline-block;
   padding: 4px 0;
@@ -438,13 +438,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+#home .btn-get-started:hover {
   padding-top: 8px;
   background: rgba(255, 255, 255, 0.15);
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 }
@@ -452,11 +452,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (max-width: 576px) {
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -466,11 +466,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -1273,19 +1273,19 @@ section {
 
 
 /*--------------------------------------------------------------
-# Team
+# Hobbies
 --------------------------------------------------------------*/
-.team .member {
+.hobbies .member {
   text-align: center;
   margin-bottom: 80px;
   position: relative;
 }
 
-.team .member .pic {
+.hobbies .member .pic {
   overflow: hidden;
 }
 
-.team .member .member-info {
+.hobbies .member .member-info {
   position: absolute;
   top: 85%;
   left: 20px;
@@ -1299,11 +1299,11 @@ section {
   transition: max-height 0.5s ease-in-out;
 }
 
-.team .member:hover .member-info {
+.hobbies .member:hover .member-info {
   max-height: 300px;
 }
 
-.team .member h4 {
+.hobbies .member h4 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
@@ -1312,7 +1312,7 @@ section {
   padding-bottom: 10px;
 }
 
-.team .member h4::after {
+.hobbies .member h4::after {
   content: '';
   position: absolute;
   display: block;
@@ -1323,33 +1323,33 @@ section {
   left: calc(50% - 25px);
 }
 
-.team .member span {
+.hobbies .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-.team .member .social {
+.hobbies .member .social {
   margin-top: 15px;
 }
 
-.team .member .social a {
+.hobbies .member .social a {
   transition: color 0.3s;
   color: #52869d;
 }
 
-.team .member .social a:hover {
+.hobbies .member .social a:hover {
   color: #67b0d1;
 }
 
-.team .member .social i {
+.hobbies .member .social i {
   font-size: 16px;
   margin: 0 2px;
 }
 
 /* if smaller than 992 px change nav bar */
 @media (max-width: 992px) {
-  .team .member {
+  .hobbies .member {
     margin-bottom: 110px;
   }
 }
